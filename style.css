@@ -1,0 +1,188 @@
+/* =========================
+   全站基礎設定
+========================= */
+body{
+    margin:0;
+    font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;
+    font-size:18px;
+    line-height:1.8;
+    color:#1f2d3d;
+    background:linear-gradient(to bottom, #eaf6ff, #ffffff);
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    background:linear-gradient(135deg, #4aa3df, #1e88e5);
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+    letter-spacing:2px;
+}
+
+/* =========================
+   NAV（兩層選單）
+========================= */
+nav{
+    background:#ffffff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* 第一層 */
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+nav ul li{
+    position:relative;
+    padding:12px 10px;
+    font-weight:bold;
+}
+
+/* 第一層連結 */
+nav a{
+    text-decoration:none;
+    color:#1e88e5;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#e3f2fd;
+}
+
+/* 第二層（下拉選單） */
+nav ul li ul{
+    display:none;
+    position:absolute;
+    top:45px;
+    left:0;
+    background:white;
+    min-width:180px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    border-radius:10px;
+    flex-direction:column;
+    padding:10px 0;
+    z-index:1000;
+}
+
+/* hover 展開 */
+nav ul li:hover ul{
+    display:flex;
+}
+
+nav ul li ul li{
+    padding:8px 15px;
+    white-space:nowrap;
+    font-weight:normal;
+}
+
+/* =========================
+   MAIN（內容區塊）
+========================= */
+main{
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* 標題樣式 */
+h2{
+    color:#1e88e5;
+    border-left:6px solid #4aa3df;
+    padding-left:10px;
+    margin-top:0;
+}
+
+h3{
+    color:#2c3e50;
+}
+
+/* 段落 */
+p{
+    margin-bottom:15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+    background:#1e88e5;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:50px;
+    font-size:14px;
+}
+
+/* =========================
+   連結效果
+========================= */
+a{
+    color:#1e88e5;
+}
+
+a:hover{
+    color:#0d47a1;
+}
+
+/* =========================
+   卡片（可選用）
+========================= */
+.card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+}
+
+/* =========================
+   Google Map iframe
+========================= */
+iframe{
+    width:100%;
+    height:450px;
+    border:0;
+    border-radius:12px;
+    margin-top:15px;
+}
+
+/* =========================
+   RWD（手機版）
+========================= */
+@media (max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    nav ul li ul{
+        position:static;
+        box-shadow:none;
+        display:none;
+    }
+
+    main{
+        margin:20px;
+        padding:20px;
+    }
+}

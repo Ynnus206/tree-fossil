@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直立樹化石</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>直立樹化石</h1>
+
+        <p>
+            <span class="vocab" onclick="showVocab('直立','upright; vertical','The tree remained upright after the storm.')">直立</span>樹
+            <span class="term" onclick="showTerm('化石','Fossil: preserved remains of ancient organisms.','Scientists discovered a fossil in the rock layer.')">化石</span>
+            之所以讓人
+            <span class="vocab" onclick="showVocab('震撼','to shock; to astonish','The discovery shocked many researchers.')">震撼</span>，
+            是因為它們直直地
+            <span class="vocab" onclick="showVocab('橫跨','to span across','The bridge spans across the river.')">橫跨</span>
+            了好幾個
+            <span class="term" onclick="showTerm('岩層','Rock layer or stratum.','Different fossils are found in different rock layers.')">岩層</span>。
+            傳統的課本說，地下的每一層石頭都需要幾百萬年才會慢慢
+            <span class="term" onclick="showTerm('沉積','Sediment accumulation process.','Sediment gradually accumulated at the bottom of the lake.')">沉積</span>
+            形成。
+        </p>
+
+        <p>
+            可是，把這個說法用在化石樹上，就會有不合理的地方。
+            大家都知道，一棵
+            <span class="vocab" onclick="showVocab('枯死','to wither and die','The tree died during the drought.')">枯死</span>
+            的樹在自然環境裡不可能放幾百萬年還不
+            <span class="vocab" onclick="showVocab('腐爛','to decay','Fallen leaves decay quickly in wet soil.')">腐爛</span>。
+        </p>
+
+        <p>
+            如果岩層真的像
+            <span class="term" onclick="showTerm('演化論','Theory of biological evolution.','Evolution theory explains biodiversity through natural processes.')">演化論</span>
+            說的那樣慢慢累積，那麼樹的上面在被完全
+            <span class="vocab" onclick="showVocab('掩埋','to bury','The village was buried by mud.')">掩埋</span>
+            以前，一定早就因為
+            <span class="vocab" onclick="showVocab('風化','weathering process','The rock was broken down by weathering.')">風化</span>
+            而消失了。
+        </p>
+
+        <p>
+            這項證據不但挑戰了
+            <span class="vocab" onclick="showVocab('漫長','long-lasting','It was a long journey.')">漫長</span>
+            的時間觀念，也證明了岩層並不是經過很長時間累積的。
+            相反地，這表示許多岩層是在非常短的時間內就很快地
+            <span class="vocab" onclick="showVocab('堆疊','to pile up','Books were piled up on the desk.')">堆疊</span>
+            而成。
+        </p>
+
+        <p>
+            這種又大又快的沉積現象，更符合
+            <span class="term" onclick="showTerm('大洪水','A massive flood event.','Some flood theories suggest rapid sediment deposition.')">大洪水</span>
+            這類
+            <span class="vocab" onclick="showVocab('災變','catastrophic event','The earthquake was a major catastrophe.')">災變</span>
+            情況。
+        </p>
+    </div>
+
+    <!-- 生詞視窗 -->
+    <div id="vocabModal" class="modal">
+        <div class="modal-content vocab-box">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="vocabTitle"></h2>
+            <p><strong>Meaning</strong></p>
+            <p id="vocabMeaning"></p>
+
+            <p><strong>Example</strong></p>
+            <p id="vocabExample"></p>
+        </div>
+    </div>
+
+    <!-- 專業詞彙視窗 -->
+    <div id="termModal" class="modal">
+        <div class="modal-content term-box">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="termTitle"></h2>
+            <p><strong>Definition</strong></p>
+            <p id="termMeaning"></p>
+
+            <p><strong>Scientific Example</strong></p>
+            <p id="termExample"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

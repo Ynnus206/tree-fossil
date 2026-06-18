@@ -28,7 +28,7 @@ header h1{
 }
 
 /* =========================
-   NAV（兩層選單）
+   NAV
 ========================= */
 nav{
     background:#ffffff;
@@ -95,7 +95,7 @@ iframe{
 }
 
 /* =========================
-   生詞（vocabulary）
+   生詞
 ========================= */
 .vocab{
     color:#1565c0;
@@ -107,176 +107,7 @@ iframe{
 }
 
 /* =========================
-   專業詞（terms）
-========================= */
-.term{
-    color:#7b1fa2;
-    background:#f3e5f5;
-    padding:2px 5px;
-    border-radius:4px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-/* =========================
-   Modal
-========================= */
-.modal{
-    display:none;
-    position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.5);
-}
-
-.modal-content{
-    width:420px;
-    margin:120px auto;
-    padding:25px;
-    border-radius:10px;
-    background:white;
-}
-
-.vocab-box{
-    border-left:8px solid #1565c0;
-}
-
-.term-box{
-    border-left:8px solid #7b1fa2;
-}
-
-.close{
-    float:right;
-    font-size:28px;
-    cursor:pointer;
-}
-
-/* =========================
-   RWD
-========================= */
-@media (max-width:768px){
-    nav ul{
-        flex-direction:column;
-        align-items:center;
-        gap:10px;
-    }
-
-    main{
-        margin:20px;
-        padding:20px;
-    }
-/* =========================
-   全站基礎設定
-========================= */
-body{
-    margin:0;
-    font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;
-    font-size:18px;
-    line-height:1.8;
-    color:#1f2d3d;
-    background:linear-gradient(to bottom, #eaf6ff, #ffffff);
-}
-
-/* =========================
-   HEADER
-========================= */
-header{
-    background:linear-gradient(135deg, #4aa3df, #1e88e5);
-    color:white;
-    text-align:center;
-    padding:30px 20px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.15);
-}
-
-header h1{
-    margin:0;
-    font-size:32px;
-    letter-spacing:2px;
-}
-
-/* =========================
-   NAV（兩層選單）
-========================= */
-nav{
-    background:#ffffff;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
-}
-
-nav ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-}
-
-nav ul li{
-    position:relative;
-    padding:12px 10px;
-    font-weight:bold;
-}
-
-nav a{
-    text-decoration:none;
-    color:#1e88e5;
-    padding:8px 12px;
-    border-radius:8px;
-}
-
-nav a:hover{
-    background:#e3f2fd;
-}
-
-/* =========================
-   MAIN
-========================= */
-main{
-    max-width:1000px;
-    margin:40px auto;
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.08);
-}
-
-/* =========================
-   卡片
-========================= */
-.card{
-    background:#ffffff;
-    border-radius:12px;
-    padding:20px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.08);
-    margin-bottom:20px;
-}
-
-/* =========================
-   Google Map
-========================= */
-iframe{
-    width:100%;
-    height:450px;
-    border:0;
-    border-radius:12px;
-}
-
-/* =========================
-   生詞（vocabulary）
-========================= */
-.vocab{
-    color:#1565c0;
-    background:#e3f2fd;
-    padding:2px 5px;
-    border-radius:4px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-/* =========================
-   專業詞（terms）
+   專業詞
 ========================= */
 .term{
     color:#7b1fa2;
